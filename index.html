@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Weather Analysis Dashboard</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Weather Analysis Dashboard</h1>
+
+<div class="search-box">
+
+<input 
+type="text" 
+id="city" 
+placeholder="Enter City Name">
+
+<button onclick="getWeather()">Search</button>
+
+</div>
+
+<div class="weather-card">
+
+<h2 id="cityName">City</h2>
+
+<p>Temperature: 
+<span id="temp">--</span> °C
+</p>
+
+<p>Humidity: 
+<span id="humidity">--</span> %
+</p>
+
+<p>Wind Speed: 
+<span id="wind">--</span> km/h
+</p>
+
+<p>Weather: 
+<span id="weather">--</span>
+</p>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
