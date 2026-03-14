@@ -1,4 +1,4 @@
-const apiKey = c3fe8d2da199a79c5eb203f3518aa342;
+const apiKey = "c3fe8d2da199a79c5eb203f3518aa342";
 
 function getWeather(){
 
@@ -11,7 +11,7 @@ fetch(url)
 .then(response => response.json())
 .then(data => {
 
-document.getElementById("").innerText = data.name;
+document.getElementById("cityName").innerText = data.name;
 
 document.getElementById("temp").innerText = data.main.temp;
 
@@ -21,5 +21,8 @@ document.getElementById("wind").innerText = data.wind.speed;
 
 document.getElementById("weather").innerText = data.weather[0].main;
 
+})
+.catch(error=>{
+  alert("City not found");
 });
 }
